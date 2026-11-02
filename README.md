@@ -71,6 +71,6 @@ $$\text{Tarifa Indicada} = \frac{\text{Prima Pura Proyectada} + \text{Gasto Fijo
 
 ---
 
-## 👤 Autor
+## Autor
 **José Carlos Estrada Barajas**  
 Licenciatura en Actuaría — Universidad Autónoma del Estado de México (UAEMéx)
