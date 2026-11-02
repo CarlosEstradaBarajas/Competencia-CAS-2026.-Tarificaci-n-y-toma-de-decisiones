@@ -1,17 +1,17 @@
-# Modelo Actuarial de Tarifación (Ratemaking) – Caso PrismAuto 🚗📊
+# Modelo Actuarial de Tarifación (Ratemaking) – Caso PrismAuto 
 **Competencia de Casos CAS 2026 (Casualty Actuarial Society)**  
 **Equipo:** Los Bayesianos | **Institución:** Universidad Autónoma del Estado de México (UAEMéx)
 
 ---
 
-## 📌 Descripción General
+## Descripción General
 Este repositorio contiene el modelo actuarial integral de tarifación (*Overall Rate Indication*) desarrollado para **PrismAuto** en el marco de la **Competencia de Casos CAS 2026**. El objetivo principal del proyecto es estimar la prima pura proyectada, determinar la reserva por siniestros ocurridos pero no reportados (**IBNR**) y calcular la **tarifa indicada por exposición** para la cartera de seguros de automóviles durante el periodo de vigencia proyectado.
 
 El flujo de trabajo abarca desde la auditoría y depuración de la base de microdatos de siniestralidad hasta la indicación tarifaria final, integrando el método *Chain-Ladder*, pruebas de hipótesis para cambios estructurales, regresiones exponenciales de frecuencia y severidad, y el cálculo del Ratio de Siniestralidad Permisible (*Permissible Loss Ratio - PLR*).
 
 ---
 
-## 🛠️ Metodología y Flujo Técnico
+## Metodología y Flujo Técnico
 
 ### 1. Auditoría de Datos y Control de Calidad (`Datos`)
 Se analizaron **4,620 registros** individuales de pagos parciales de siniestros ocurridos entre el `2022-T1` y el `2024-T4`. Para garantizar la integridad estadística de los triángulos de desarrollo, se implementaron tres filtros de consistencia:
@@ -49,7 +49,7 @@ Integrando los trimestres base de experiencia más recientes (`2024-T2`, `2024-T
 
 ---
 
-## 📈 Resumen Ejecutivo de Resultados
+## Resumen Ejecutivo de Resultados
 
 $$\text{Tarifa Indicada} = \frac{\text{Prima Pura Proyectada} + \text{Gasto Fijo por Exposición}}{\text{Ratio de Siniestralidad Permisible (PLR)}}$$
 
@@ -60,7 +60,7 @@ $$\text{Tarifa Indicada} = \frac{\text{Prima Pura Proyectada} + \text{Gasto Fijo
 
 ---
 
-## 📂 Estructura del Archivo (`CAS_Entrega_ver1.xlsx`)
+## Estructura del Archivo (`CAS_Entrega_ver1.xlsx`)
 * `Identificación`: Portada institucional y registro del equipo representativo.
 * `Datos`: Base de microdatos con `4,620` registros de siniestros, variables de suscripción (potencia, antigüedad, edad, *bonus-malus*, densidad, zona geográfica) y banderas lógicas de depuración.
 * `1-Triángulo y FDD`: Construcción de triángulos incrementales/acumulados y cálculo de factores *link-ratio*.
